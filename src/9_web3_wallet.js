@@ -25,7 +25,8 @@ async function main() {
     web3.eth.accounts.wallet.create()
     console.log("wallet ", web3.eth.accounts.wallet)
     // Create 3 accounts into wallet
-    web3.eth.accounts.wallet.create(3)
+    web3.eth.accounts.wallet.create(3, "entropy012345678901234567890123456789")
+    // web3.eth.accounts.wallet.create(3, web3.utils.randomHex(32))
     console.log("wallet + 3 accounts", web3.eth.accounts.wallet)
 
 
